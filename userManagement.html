@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar sidebar-nav">
+        <div class="sidebar-inner">
+            <div class="head-main-info">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <span class="close-icon-mobile">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+            </div>
+
+            <div class="menu-container">
+                <ul class="menu">
+                    <li class="active">
+                        <a href="index.html" class="menu-item ">
+                            <div class="menu-title-inner">
+                                <img src="images/home.svg" alt="">
+                                <span>Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="userManagement.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/user.svg" alt="">
+                                <span>users</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/content.svg" alt="">
+                                <span>content</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="postList.html">
+                                    <span>Post list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reportPostList.html">
+                                    <span>Report Post List</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/events.svg" alt="">
+                                <span>events</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="eventList.html">
+                                    <span>event list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="createEvent.html">
+                                    <span>add new event</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="subscription.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/subscription.svg" alt="">
+                                <span>subscription & payments</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reporting-and-analytics.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/reporting.svg" alt="">
+                                <span>reporting & Analytics</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedback.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/support.svg" alt="">
+                                <span>Support & Feedback</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/notification-bar.svg" alt="">
+                                <span>Notification</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="createNotification.html">
+                                    <span>create notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ScheduledNotifications.html">
+                                    <span>schedule notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notificationHistory.html">
+                                    <span>notification history</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/profile.svg" alt="">
+                                <span>my profile</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="admin-info">
+            <div class="detail-wrap">
+                <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                <div class="user-details">
+                    <h4 class="name">james victor</h4>
+                    <span class="role">Admin</span>
+                </div>
+            </div>
+            <div class="logout-icon" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                <img src="images/logout.svg" alt="">
+            </div>
+        </div>
+
+        <div class="sidebar-image">
+            <img src="images/sidebar-img.png" alt="">
+        </div>
+
+    </aside>
+
+    <div class="main-container">
+         <div class="header">
+            <div class="header-head">
+                <div class="toggle-data">
+                    <a class="toggle-info">
+                        <img src="images/toggle.svg" alt="">
+                    </a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search here...">
+                        <span>
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bar">
+                <div class="search-box-mobile">
+                    <span>
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <a href="#">
+                        <img src="images/notification.svg" alt="">
+                    </a>
+                    <span class="dot">5</span>
+                </div>
+
+                <div class="user-info" id="userMenu">
+                    <div class="detail-wrap">
+                        <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                        <div class="user-details">
+                            <h4 class="name">james victor</h4>
+                            <span class="role">Admin</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+
+            <div class="breadcrumb-container">
+                <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">users</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search here...">
+                    <button class="search-btn">
+                        <img src="images/search-icon.svg" alt="">
+                    </button>
+                </div>
+                <button class="filter-btn" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas"
+                    aria-controls="filterOffcanvas">
+                    <img src="images/filter-icon.svg" alt="">
+                </button>
+            </div>
+
+            <div class="userMangement-table-wrapper">
+
+                <div class="userMangement-table">
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  active" id="users-list-tab" data-bs-toggle="tab"
+                                data-bs-target="#users-list" type="button" role="tab" aria-controls="users-list"
+                                aria-selected="true">
+                               <span>Users List</span> 
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="verification-requests-tab" data-bs-toggle="tab"
+                                data-bs-target="#verification-requests" type="button" role="tab"
+                                aria-controls="verification-requests" aria-selected="false">
+                               <span>Verification Requests</span> 
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="users-list" role="tabpanel"
+                            aria-labelledby="users-list-tab">
+                            <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Profile</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Gender</th>
+                                            <th>Join Date</th>
+                                            <th>Verification Status</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+    
+                                    <tbody>
+    
+                                        <!-- Row 1 -->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge pending">Pending</span></td>
+                                            <td>
+                                                <div class="action-btn">
+                                                    <a class="ban-bg" data-bs-toggle="modal" data-bs-target="#banModal"><img
+                                                            src="images/ban-icon.svg" alt=""></a>
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#suspendModal"><img src="images/suspend-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 2 -->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge verified">verified</span></td>
+                                            <td>
+                                               <div class="action-btn">
+                                                    <a class="eye-icon" data-toggle="tooltip" data-bs-toggle="modal" data-bs-target="#userDetailModal"><img src="images/view-icon.png" alt="">
+                                                        <span class="tooltip">View</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 3-->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge verified">verified</span></td>
+                                            <td>
+                                               <div class="action-btn">
+                                                    <a class="ban-bg" data-bs-toggle="modal" data-bs-target="#banModal"><img
+                                                            src="images/ban-icon.svg" alt=""></a>
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#suspendModal"><img src="images/suspend-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 4-->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge verified">verified</span></td>
+                                            <td>
+                                              <div class="action-btn">
+                                                    <a class="ban-bg" data-bs-toggle="modal" data-bs-target="#banModal"><img
+                                                            src="images/ban-icon.svg" alt=""></a>
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#suspendModal"><img src="images/suspend-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 5-->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge verified">verified</span></td>
+                                            <td>
+                                               <div class="action-btn">
+                                                    <a class="ban-bg" data-bs-toggle="modal" data-bs-target="#banModal"><img
+                                                            src="images/ban-icon.svg" alt=""></a>
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#suspendModal"><img src="images/suspend-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 6-->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge verified">verified</span></td>
+                                            <td>
+                                               <div class="action-btn">
+                                                    <a class="ban-bg" data-bs-toggle="modal" data-bs-target="#banModal"><img
+                                                            src="images/ban-icon.svg" alt=""></a>
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#suspendModal"><img src="images/suspend-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+    
+    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="verification-requests" role="tabpanel"
+                            aria-labelledby="verification-requests-tab">
+                            <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Profile</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Gender</th>
+                                            <th>Join Date</th>
+                                            <th>Verification Status</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+    
+                                    <tbody>
+    
+                                        <!-- Row 1 -->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge pending">Pending</span></td>
+                                            <td>
+                                                <div class="action-btn">
+                                                    <a class="ban-bg " data-bs-toggle="modal"
+                                                        data-bs-target="#banModal"><img src="images/ban-icon.svg"
+                                                            alt=""></a>
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#suspendModal"><img src="images/suspend-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 2 -->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge verified">verified</span></td>
+                                            <td>
+                                               <div class="action-btn">
+                                                    <a class="ban-bg" data-bs-toggle="modal" data-bs-target="#banModal"><img
+                                                            src="images/ban-icon.svg" alt=""></a>
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#suspendModal"><img src="images/suspend-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 3-->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge verified">verified</span></td>
+                                            <td>
+                                                <div class="action-btn">
+                                                    <a class="ban-bg" data-bs-toggle="modal" data-bs-target="#banModal"><img
+                                                            src="images/ban-icon.svg" alt=""></a>
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#suspendModal"><img src="images/suspend-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 4-->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge verified">verified</span></td>
+                                            <td>
+                                                <div class="action-btn">
+                                                    <a class="ban-bg" data-bs-toggle="modal" data-bs-target="#banModal"><img
+                                                            src="images/ban-icon.svg" alt=""></a>
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#suspendModal"><img src="images/suspend-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 5-->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge verified">verified</span></td>
+                                            <td>
+                                                <div class="action-btn">
+                                                    <a class="ban-bg" data-bs-toggle="modal" data-bs-target="#banModal"><img
+                                                            src="images/ban-icon.svg" alt=""></a>
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#suspendModal"><img src="images/suspend-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+    
+    
+    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pagination-container">
+                    <div class="results">Showing 4 out of 20 results</div>
+                    <div class="pagination">
+                        <div class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
+                        <div class="page">1</div>
+                        <div class="page active">2</div>
+                        <div class="dots"><i class="fa-solid fa-ellipsis"></i></div>
+                        <div class="page">20</div>
+                        <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas (Bootstrap) -->
+    <div class="offcanvas offcanvas-end filter-Offcanvas" tabindex="-1" id="filterOffcanvas"
+        aria-labelledby="filterOffcanvasLabel">
+        <div class="offcanvas-header">
+            <a href="#" class="back-arrow " data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-chevron-left"></i></a>
+            <h5 class="offcanvas-title">Filter & Show</h5>
+
+        </div>
+        <div class="offcanvas-body">
+            <div class=" serach-location field-gap border-bottom ">
+                <label class="form-label">Search By Location</label>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter State">
+                    <span class="icon"><img src="images/location.svg" alt=""></span>
+                </div>
+
+            </div>
+
+
+            <div class=" verification-status field-gap border-bottom">
+
+                <label class="form-label">Search By Verification Status</label>
+
+                <div class="custom-dropdown" id="verificationDropdown">
+                    <div class="custom-dropdown-toggle">
+                        <div class="status-select">
+
+                            <span class="icon"><img src="images/status.svg" alt=""></span>
+                            <span class="text" id="selectedText">Select Verification Status</span>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="custom-dropdown-menu">
+                        <div class="item" data-value="verified">Verified</div>
+                        <div class="item" data-value="pending">Pending</div>
+                        <div class="item" data-value="rejected">Rejected</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gender-select field-gap">
+                <label class="form-label">show me</label>
+                <div class="gender-options">
+                    <label class="radio">
+                        <input type="radio" name="gender" checked>
+                        <span>Men</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="gender">
+                        <span>Women</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="gender">
+                        <span>Both</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="button-wrapper">
+                <button class="light-btn"><span>Reset</span></button>
+                <button class="primary-color-btn"><span>Apply</span></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Ban Modal -->
+    <div class="modal fade confirm-modal ban-modal " id="banModal" tabindex="-1" aria-labelledby="banModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="ban-icon">
+                    <img src="images/ban-white.svg" alt="">
+                </div>
+                <div class="modal-body">
+                    <div class="modal-content-wrapper">
+
+                        <div class="modal-data">
+                            <h2>Are You Sure Want To Ban This User??</h2>
+                            <p>This Action Can’t Be Undone</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="buttons">
+                        <button class=" modal-btn  light-btn" data-bs-dismiss="modal">
+                            <span>Cancel</span>
+                        </button>
+                        <button class="modal-btn primary-btn-color">
+                            <span>Ban</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--suspend Modal -->
+    <div class="modal fade confirm-modal suspend-modal" id="suspendModal" tabindex="-1" aria-labelledby="uspendModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="ban-icon">
+                    <img src="images/suspend.svg" alt="">
+                </div>
+                <div class="modal-body">
+                    <div class="modal-content-wrapper">
+
+                        <div class="modal-data">
+                            <h2>are you sure want to suspend this user??</h2>
+                            <p>this action can’t be undone</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="buttons">
+                        <button class=" modal-btn   light-btn" data-bs-dismiss="modal">
+                            <span>Cancel</span>
+                        </button>
+                        <button class="modal-btn primary-btn-color">
+                            <span>suspend</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--user-detail Modal -->
+    <div class="modal fade userDetailModal" id="userDetailModal" tabindex="-1" aria-labelledby="userDetailModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ribbon-header ">
+                   
+                    <h5 class="modal-title">
+                         <span class="fold fold-left" aria-hidden="true"></span>
+                        <span class="ribbon-inner">user detail</span>
+                         <span class="fold fold-right" aria-hidden="true"></span>
+                    </h5>
+                     
+                </div>
+                <div class="modal-body">
+                    <div class="user-details-content">
+                        <div class="user-details">
+                            <div class="details-row">
+                                <h4 class="detail-label">Profile</h4>
+                                <div class="right-data-wrap">
+                                    <span class="detail-colon">:</span>
+                                    <div class="detail-value">
+                                        <span class="user-profile">
+                                            <img src="images/profile.png">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-row">
+                                <h4 class="detail-label">name</h4>
+                                <div class="right-data-wrap">
+                                    <span class="detail-colon">:</span>
+                                    <div class="detail-value">
+                                        patrick deo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-row">
+                                <h4 class="detail-label">birth date</h4>
+                                <div class="right-data-wrap">
+                                    <span class="detail-colon">:</span>
+                                    <div class="detail-value">
+                                        10/10/1999
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-row">
+                                <h4 class="detail-label">location</h4>
+                                <div class="right-data-wrap">
+                                    <span class="detail-colon">:</span>
+                                    <div class="detail-value">
+                                        gujarat
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-row">
+                                <h4 class="detail-label">ID proof</h4>
+                                <div class="right-data-wrap">
+                                    <span class="detail-colon">:</span>
+                                    <div class="detail-value document-wrap ">
+                                        patrickid.pdf
+                                        <span class="document-image">
+                                            <img src="images/document-image.svg" alt="">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="details-row">
+                                <h4 class="detail-label">Age</h4>
+                                <div class="right-data-wrap">
+                                    <span class="detail-colon">:</span>
+                                    <div class="detail-value">
+                                        25
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-row">
+                                <h4 class="detail-label">email</h4>
+                                <div class="right-data-wrap">
+                                    <span class="detail-colon">:</span>
+                                    <div class="detail-value">
+                                        patexample@abc.com
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-row">
+                                <h4 class="detail-label">gender</h4>
+                                <div class="right-data-wrap">
+                                    <span class="detail-colon">:</span>
+                                    <div class="detail-value">
+                                        male
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-row">
+                                <h4 class="detail-label">request date</h4>
+                                <div class="right-data-wrap">
+                                    <span class="detail-colon">:</span>
+                                    <div class="detail-value">
+                                        15/09/20204
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-row">
+                                <h4 class="detail-label">video proof</h4>
+                                <div class="right-data-wrap">
+                                    <span class="detail-colon">:</span>
+                                    <div class="detail-value ">
+                                        <span class="vedio-proof">
+                                            <img src="images/vedio-cover-bg.png" alt="">
+                                            <span class="icon"><i class="fa-solid fa-play"></i></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="buttons">
+                        <button class="modal-btn primary-btn-color"><span>verify user</span></button>
+                        <button class=" modal-btn   light-btn" data-bs-dismiss="modal"><span>cancel</span></button>
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+        integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src="js/custom.js"></script>
+</body>
+
+</html>

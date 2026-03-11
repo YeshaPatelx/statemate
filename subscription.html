@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription & Payments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+
+    <aside class="sidebar sidebar-nav">
+        <div class="sidebar-inner">
+            <div class="head-main-info">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <span class="close-icon-mobile">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+            </div>
+
+            <div class="menu-container">
+                <ul class="menu">
+                    <li class="active">
+                        <a href="index.html" class="menu-item ">
+                            <div class="menu-title-inner">
+                                <img src="images/home.svg" alt="">
+                                <span>Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="userManagement.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/user.svg" alt="">
+                                <span>users</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/content.svg" alt="">
+                                <span>content</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="postList.html">
+                                    <span>Post list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reportPostList.html">
+                                    <span>Report Post List</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/events.svg" alt="">
+                                <span>events</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="eventList.html">
+                                    <span>event list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="createEvent.html">
+                                    <span>add new event</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="subscription.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/subscription.svg" alt="">
+                                <span>subscription & payments</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reporting-and-analytics.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/reporting.svg" alt="">
+                                <span>reporting & Analytics</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedback.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/support.svg" alt="">
+                                <span>Support & Feedback</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/notification-bar.svg" alt="">
+                                <span>Notification</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="createNotification.html">
+                                    <span>create notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ScheduledNotifications.html">
+                                    <span>schedule notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notificationHistory.html">
+                                    <span>notification history</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/profile.svg" alt="">
+                                <span>my profile</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="admin-info">
+            <div class="detail-wrap">
+                <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                <div class="user-details">
+                    <h4 class="name">james victor</h4>
+                    <span class="role">Admin</span>
+                </div>
+            </div>
+            <div class="logout-icon" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                <img src="images/logout.svg" alt="">
+            </div>
+        </div>
+
+        <div class="sidebar-image">
+            <img src="images/sidebar-img.png" alt="">
+        </div>
+
+    </aside>
+
+    <div class="main-container">
+       <div class="header">
+            <div class="header-head">
+                <div class="toggle-data">
+                    <a class="toggle-info">
+                        <img src="images/toggle.svg" alt="">
+                    </a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search here...">
+                        <span>
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bar">
+                <div class="search-box-mobile">
+                    <span>
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <a href="#">
+                        <img src="images/notification.svg" alt="">
+                    </a>
+                    <span class="dot">5</span>
+                </div>
+
+                <div class="user-info" id="userMenu">
+                    <div class="detail-wrap">
+                        <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                        <div class="user-details">
+                            <h4 class="name">james victor</h4>
+                            <span class="role">Admin</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+
+            <div class="breadcrumb-container">
+                <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">subscription & payments</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="events-info-count subscription-plan-count">
+                <div class="event-count">
+                    <div class="box subscription-plan active">
+                        <div class="box-img">
+                            <img src="images/subscription-plan.png" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Subscription Plans</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-count">
+                    <div class="box transaction-history">
+                        <div class="box-img">
+                            <img src="images/transaction-history.png" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Transaction History</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-count">
+                     <div class="box refund-request">
+                        <div class="box-img">
+                            <img src="images/refund-request.png" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Refund Requests</span>
+                        </div>
+                    </div>
+                </div>
+                  <div class="event-count">
+                     <div class="box revenue-reports">
+                        <div class="box-img">
+                            <img src="images/revenue-reports.png" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Revenue Reports</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="manage-plan-section">
+                <div class="head-main">
+                    <h2>Manage Subscription Plans</h2>
+                    <div class="main-btn">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#boostModal">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Add New Plan</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="plan-section">
+                    <div class="service-slider">
+                        <!-- BASIC PLAN -->
+                        <div class="plan-card shadow-sm basic-plan">
+                            <div class="plan-header basic-hd">Basic</div>
+
+                            <div class="plan-content">
+                                <div class="top-content">
+                                    <div class="plan-price">$15<span>/month</span></div>
+                                    <ul class="plan-list">
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Limited profile visibility</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Daily limit on likes</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Standard matching algorithm</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Basic search filters</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Limited or no profile boosts</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Access to message history with matches</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Ads are displayed</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="btn">Edit</button>
+                            </div>
+
+                        </div>
+                        <!-- PREMIUM PLAN -->
+                        <div class="plan-card shadow-sm premium-plan">
+                            <div class="plan-header premium-hd">Premium</div>
+
+                            <div class="plan-content">
+                                <div class="top-content">
+
+                                    <div class="plan-price">$21<span>/month</span></div>
+        
+                                    <ul class="plan-list">
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Enhanced profile visibility</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Increased daily limit on likes</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Advanced matching algorithm</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Extended search filters</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Monthly profile boosts included</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>Access to message history with all matches</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>See when messages are read</span>
+                                        </li>
+                                        <li>
+                                            <div class="plan-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <span>No ads</span>
+                                        </li>
+                                    </ul>
+                                </div>
+        
+                                <button class="btn">Edit</button>
+                            </div>
+
+                        </div>
+                        <!-- ELITE PLAN -->
+                        <div class="plan-card shadow-sm elite-plan">
+                            <div class="plan-header elite-hd">Elite</div>
+
+                            <div class="plan-content">
+                                <div class="top-content">
+                                    <div class="plan-price">$30<span>/month</span></div>
+        
+                                        <ul class="plan-list">
+                                            <li>
+                                                <div class="plan-icon">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <span>Top profile visibility</span>
+                                            </li>
+                                            <li>
+                                                <div class="plan-icon">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div> 
+                                                <span>Unlimited likes</span>
+                                            </li>
+                                            <li>
+                                                <div class="plan-icon">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <span>Priority matching with exclusive algorithm</span>
+                                            </li>
+                                            <li>
+                                                <div class="plan-icon">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <span>Advanced search filters with custom options</span>
+                                            </li>
+                                            <li>
+                                                <div class="plan-icon">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <span>Unlimited profile boosts</span>
+                                            </li>
+                                            <li>
+                                                <div class="plan-icon">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <span>Access to message history with anyone</span>
+                                            </li>
+                                            <li>
+                                                <div class="plan-icon">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <span>See when messages are read and viewed</span>
+                                            </li>
+                                            <li>
+                                                <div class="plan-icon">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <span>24/7 priority support</span>
+                                            </li>
+                                            <li>
+                                                <div class="plan-icon">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <span>No ads</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                    <button class="btn">Edit</button>
+                                
+                            </div>
+
+                        </div>
+                         <!-- BOOST PLAN -->
+                        <div class="plan-card shadow-sm boost-plan">
+                            <div class="plan-header boost-hd">Boost Profile</div>
+
+                            <div class="plan-content">
+                                <div class="top-content">
+
+                                   <div class="top-content-title">
+                                        <h4>Boost your Profile</h4>
+                                        <span>Boost your profile to get more likes and stand out! Hurry up and activate a boost to connect with more people faster!</span>
+                                   </div>
+        
+                                    <div class="boost-content-inner">
+                                        <div class="boost-item">
+                                            <h4>Instant Boost</h4>
+                                            <h2>$10</h2>
+                                            <span> Get more likes within 30 minutes </span>
+                                        </div>
+                                         <div class="boost-item">
+                                            <h4>Daily Boost</h4>
+                                            <h2>$20</h2>
+                                            <span>Increase your likes for 24 hours</span>
+                                            <span class="save-text">Save 30%</span>
+                                        </div>
+                                         <div class="boost-item">
+                                            <h4>Weekly Boost</h4>
+                                            <h2>$49</h2>
+                                            <span>Get maximum likes for 7 days</span>
+                                            <span class="save-text">Save 30%</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <button class="btn">Edit</button>
+                            </div>
+
+                        </div>
+                         <!-- BOOST PLAN -->
+                        <div class="plan-card shadow-sm superlike-plan">
+                            <div class="plan-header superlike-hd">Super likes</div>
+
+                            <div class="plan-content">
+                                <div class="top-content">
+
+                                   <div class="top-content-title">
+                                        <span>Shine with a Super Like. Increase your likelihood of a match by 3 times!</span>
+                                   </div>
+        
+                                    <div class="boost-content-inner">
+                                        <div class="boost-item">
+                                            <h2>$10</h2>
+                                            <span class="main-plan-text">4</span>
+                                            <h4>Super Likes</h4>
+                                        </div>
+                                         <div class="boost-item">
+                                            <h2>$21</h2>
+                                            <span class="main-plan-text">15</span>
+                                            <h4>Super Likes</h4>
+                                            <span class="save-text">Save 30%</span>
+                                        </div>
+                                         <div class="boost-item">
+                                            <h2>$49</h2>
+                                            <span class="main-plan-text">30</span>
+                                            <h4>Super Likes</h4>
+                                            <span class="save-text">Save 30%</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <button class="btn">Edit</button>
+                            </div>
+
+                        </div>
+
+
+                      
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Offcanvas (Bootstrap) -->
+    <div class="offcanvas offcanvas-end filter-Offcanvas" tabindex="-1" id="filterOffcanvas"
+        aria-labelledby="filterOffcanvasLabel">
+        <div class="offcanvas-header">
+            <a href="#" class="back-arrow " data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-chevron-left"></i></a>
+            <h5 class="offcanvas-title">Filter & Show</h5>
+
+        </div>
+        <div class="offcanvas-body">
+            <div class=" serach-location field-gap border-bottom ">
+                <label class="form-label">Search By Location</label>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter State">
+                    <span class="icon"><img src="images/location.svg" alt=""></span>
+                </div>
+
+            </div>
+
+
+            <div class=" verification-status field-gap border-bottom">
+
+                <label class="form-label">Search By Verification Status</label>
+
+                <div class="custom-dropdown" id="verificationDropdown">
+                    <div class="custom-dropdown-toggle">
+                        <div class="status-select">
+
+                            <span class="icon"><img src="images/status.svg" alt=""></span>
+                            <span class="text" id="selectedText">Select Verification Status</span>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="custom-dropdown-menu">
+                        <div class="item" data-value="verified">Verified</div>
+                        <div class="item" data-value="pending">Pending</div>
+                        <div class="item" data-value="rejected">Rejected</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gender-select field-gap">
+                <label class="form-label">show me</label>
+                <div class="gender-options">
+                    <label class="radio">
+                        <input type="radio" name="gender" checked>
+                        <span>Men</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="gender">
+                        <span>Women</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="gender">
+                        <span>Both</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="button-wrapper">
+                <button class="light-btn">Reset</button>
+                <button class="primary-color-btn">Apply</button>
+            </div>
+        </div>
+    </div>
+
+ <!-- add plan popup -->
+   <div class="modal fade planModal" id="planModal" tabindex="-1" aria-labelledby="#planModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ribbon-header ">
+ 
+                    <h5 class="modal-title">
+                        <span class="fold fold-left" aria-hidden="true"></span>
+                        <span class="ribbon-inner">Add Plan</span>
+                        <span class="fold fold-right" aria-hidden="true"></span>
+                    </h5>
+ 
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="field-box row" >
+                            <div class="form-group col-lg-12">
+                                <label for="plan-title">Plan  Name</label>
+                                <input class="input-field" type="text" id="plan-title" placeholder="">
+                            </div>
+                            
+                            <div class="form-group col-lg-6">
+                                <label for="plan-title">price</label>
+                               <input class="input-field" id="plan-details" placeholder="">
+                            </div>
+
+                            <div class="form-group col-lg-6">
+                                <label for="plan-duration">duration</label>
+                                <div class="dropdown">
+                                    <div class="dropdown-selected" id="selectedValue">
+                                        Select
+                                        <span class="arrow">&#9662;</span>
+                                    </div>
+
+                                    <ul class="dropdown-menu" id="dropdownMenu">
+                                        <li data-value="option1">Option 1</li>
+                                        <li data-value="option2">Option 2</li>
+                                        <li data-value="option3">Option 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                             <div class="form-group col-lg-12">
+                               <div class="benefits-card-content">
+                                <div class="benefits-card">
+                                    <h2>Included Benefits</h2>
+
+                                    <div class="benefitContainer">
+
+                                        <div class="benefit-row">
+                                            <div class="benefit-item">
+                                                <div class="benefit-icon"><i class="fa-solid fa-check"></i></div>
+                                                <input type="text" class="benefit-input" placeholder="">
+                                            </div>
+                                            <div class="remove-btn"><i class="fa-solid fa-minus"></i></div>
+                                        </div>
+
+                                        <div class="benefit-row">
+                                            <div class="benefit-item">
+                                                <div class="benefit-icon"><i class="fa-solid fa-check"></i></div>
+                                                <input type="text" class="benefit-input" placeholder="">
+                                            </div>
+                                            <div class="remove-btn"><i class="fa-solid fa-minus"></i></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="add-more addMore" id="addMore">
+                                        <span><i class="fa-solid fa-plus"></i></span> 
+                                        Add More features
+                                    </div>
+                                </div>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-12">
+                                
+                                <div class="active-select field-gap">
+                                    <label class="form-label">Status</label>
+                                    <div class="options">
+                                        <label class="radio">
+                                            <input type="radio" name="option" checked>
+                                            <span>Active</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="option">
+                                            <span>Inactive</span>
+                                        </label>
+                                       
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </form>
+ 
+                </div>
+                <div class="modal-footer">
+                    <div class="buttons">
+                        <button class=" modal-btn   light-btn" data-bs-dismiss="modal">
+                            <span>cancel</span>
+                        </button>
+                        <button class="modal-btn primary-btn-color">
+                            <span>submit</span>
+                        </button>
+                      
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- boost modal -->
+  <div class="modal fade planModal boostModal" id="boostModal" tabindex="-1" aria-labelledby="#boostModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ribbon-header ">
+ 
+                    <h5 class="modal-title">
+                        <span class="fold fold-left" aria-hidden="true"></span>
+                        <span class="ribbon-inner">Add Boost Profile</span>
+                        <span class="fold fold-right" aria-hidden="true"></span>
+                    </h5>
+ 
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="field-box row" >
+                            <div class="form-group col-lg-12">
+                                <label for="title">Title</label>
+                                <input class="input-field" type="text" id="title" placeholder="">
+                            </div>
+
+                            <div class="form-group col-lg-12">
+                                <label for="message">Message</label>
+                                 <textarea class="input-field" id="message" placeholder=""></textarea>
+                            </div>
+
+                             <div class="form-group col-lg-12">
+                                <h4 class="boost-options">Boost Options:</h4>
+                               <div class="benefits-card-content">
+                               
+                                <div class="benefits-card">
+                                  
+                                    <div class="benefitContainer-info">
+
+                                        <div class="benefit-row-inner">
+                                            <div class="benefit-item">
+                                                <div class="boost-item-info">
+                                                    <label for="price">Price</label>
+                                                    <input type="text" class="benefit-input" placeholder="">
+                                                </div>
+
+                                                <div class="boost-item-info boost-center-info">
+                                                    <label for="Content">Content</label>
+                                                    <input type="text" class="benefit-input" placeholder="">
+                                                </div>
+
+                                                <div class="boost-item-info">
+                                                    <label for="offer">offer</label>
+                                                    <input type="text" class="benefit-input" placeholder="">
+                                                </div>
+                                               
+                                            </div>
+                                            <div class="remove-btn"><i class="fa-solid fa-minus"></i></div>
+                                        </div>
+
+                                       
+
+                                    </div>
+
+                                    <div class="add-more-btn addMore">
+                                        <span><i class="fa-solid fa-plus"></i></span> 
+                                        Add More
+                                    </div>
+                                </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+ 
+                </div>
+                <div class="modal-footer">
+                    <div class="buttons">
+                        <button class=" modal-btn   light-btn" data-bs-dismiss="modal">
+                            <span>cancel</span>
+                        </button>
+                        <button class="modal-btn primary-btn-color">
+                            <span>submit</span>
+                        </button>
+                      
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+        integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <!-- Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+         <script src="js/custom.js"></script>
+
+
+         <script>
+            $('.service-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                arrows: true,
+                slidesToScroll:1,
+                prevArrow: '<button class="slick-prev custom-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+                nextArrow: '<button class="slick-next custom-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+                responsive: [
+                {
+                    breakpoint: 1600,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: false
+                    }
+                },
+                {
+                    breakpoint: 1199,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 993,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                    }
+                },
+                  {
+                    breakpoint: 768,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
+                }
+                ]
+            });
+         </script>
+
+         <script>
+const dropdown = document.querySelector(".dropdown");
+const selected = document.getElementById("selectedValue");
+const menu = document.getElementById("dropdownMenu");
+
+selected.onclick = () => dropdown.classList.toggle("open");
+
+menu.querySelectorAll("li").forEach(item => {
+  item.onclick = () => {
+    selected.innerHTML = item.innerText + ' <span class="arrow">&#9662;</span>';
+    dropdown.classList.remove("open");
+  };
+});
+
+document.addEventListener("click", (e) => {
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove("open");
+  }
+});
+</script>
+<script>
+
+// Show/hide close icon using jQuery
+$(document).on("input", ".benefit-input", function () {
+    let row = $(this).closest(".benefit-row");
+    if ($(this).val().trim() !== "") {
+        row.addClass("show-remove");
+    } else {
+        row.removeClass("show-remove");
+    }
+});
+
+// Add new field
+$(".addMore").on("click", function () {
+    $(".benefitContainer").append(`
+        <div class="benefit-row">
+            <div class="benefit-item">
+                <div class="benefit-icon">✔</div>
+                <input type="text" class="benefit-input" placeholder="">
+            </div>
+            <div class="remove-btn"><i class="fa-solid fa-minus"></i></div>
+        </div>
+    `);
+});
+
+// Remove field
+$(document).on("click", ".remove-btn", function () {
+    $(this).closest(".benefit-row").remove();
+});
+
+
+
+
+// Show/hide close icon using jQuery
+$(document).on("input", ".benefit-input", function () {
+    let row = $(this).closest(".benefit-row-inner");
+    if ($(this).val().trim() !== "") {
+        row.addClass("show-remove");
+    } else {
+        row.removeClass("show-remove");
+    }
+});
+
+// Add new field
+$(".add-more-btn").on("click", function () {
+    $(".benefitContainer-info").append(`
+        <div class="benefit-row-inner">
+            <div class="benefit-item">
+                <div class="boost-item-info">
+                    <label for="price">Price</label>
+                    <input type="text" class="benefit-input" placeholder="">
+                </div>
+
+                <div class="boost-item-info boost-center-info">
+                    <label for="Content">Content</label>
+                    <input type="text" class="benefit-input" placeholder="">
+                </div>
+
+                <div class="boost-item-info">
+                    <label for="offer">offer</label>
+                    <input type="text" class="benefit-input" placeholder="">
+                </div>
+                
+            </div>
+            <div class="remove-btn"><i class="fa-solid fa-minus"></i></div>
+        </div>
+    `);
+});
+
+// Remove field
+$(document).on("click", ".remove-btn", function () {
+    $(this).closest(".benefit-row-inner").remove();
+});
+
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> create Notification </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar sidebar-nav">
+        <div class="sidebar-inner">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <div class="menu-container">
+                <ul class="menu">
+                    <li >
+                        <a href="index.html" class="menu-item ">
+                            <div class="menu-title-inner">
+                                <img src="images/home.svg" alt="">
+                                <span>Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="userManagement.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/user.svg" alt="">
+                                <span>users</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/content.svg" alt="">
+                                <span>content</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="postList.html">
+                                    <span>Post list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reportPostList.html">
+                                    <span>Report Post List</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/events.svg" alt="">
+                                <span>events</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="eventList.html">
+                                    <span>event list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="createEvent.html">
+                                    <span>add new event</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="subscription.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/subscription.svg" alt="">
+                                <span>subscription & payments</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reporting-and-analytics.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/reporting.svg" alt="">
+                                <span>reporting & Analytics</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedback.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/support.svg" alt="">
+                                <span>Support & Feedback</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/notification-bar.svg" alt="">
+                                <span>Notification</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="createNotification.html">
+                                    <span>create notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ScheduledNotifications.html">
+                                    <span>schedule notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notificationHistory.html">
+                                    <span>notification history</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/profile.svg" alt="">
+                                <span>my profile</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="admin-info">
+            <div class="detail-wrap">
+                <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                <div class="user-details">
+                    <h4 class="name">james victor</h4>
+                    <span class="role">Admin</span>
+                </div>
+            </div>
+            <div class="logout-icon" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                <img src="images/logout.svg" alt="">
+            </div>
+        </div>
+
+        <div class="sidebar-image">
+            <img src="images/sidebar-img.png" alt="">
+        </div>
+
+    </aside>
+
+    <div class="main-container">
+        <div class="header">
+            <div class="header-head">
+                <div class="toggle-data">
+                    <a class="toggle-info">
+                        <img src="images/toggle.svg" alt="">
+                    </a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search here...">
+                        <span>
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bar">
+
+
+                <div class="notification">
+                    <a href="#">
+                        <img src="images/notification.svg" alt="">
+                    </a>
+                    <span class="dot">5</span>
+                </div>
+
+                <div class="user-info" id="userMenu">
+                    <div class="detail-wrap">
+                        <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                        <div class="user-details">
+                            <h4 class="name">james victor</h4>
+                            <span class="role">Admin</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+
+            <div class="breadcrumb-container">
+                <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Notification</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="notification-wrapper">
+
+                <div class="notification-header ">
+                    <h2>Create Notification</h2>
+                </div>
+
+                <div class="notification-content">
+
+                    <!-- Left Section -->
+                    <div class="left-box-wrapper">
+
+                        <div class="field-box">
+
+                            <div class="custom-dropdown" id="responseDropdown">
+                                <div class="custom-dropdown-toggle input-field">
+                                    <div class="status-select">
+
+                                        <span class="text" id="selectedText">Target Group</span>
+                                    </div>
+
+                                    <svg class="svg-inline--fa fa-chevron-down" data-prefix="fas"
+                                        data-icon="chevron-down" role="img" viewBox="0 0 448 512" aria-hidden="true"
+                                        data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com -->
+                                </div>
+                                <div class="custom-dropdown-menu">
+                                    <div class="item">
+                                        All Users
+                                    </div>
+                                    <div class="item">
+                                        Active Users
+                                    </div>
+                                    <div class="item">
+                                        Inactive Users
+                                    </div>
+                                    <div class="item">
+                                        Premium Users
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Notification Title -->
+                            <div class="form-group">
+                                <label class="input-label">Notification Title</label>
+                                <input type="text" class="input-field">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="input-label">Message Content</label>
+                                <textarea class="input-field" id="event-details" placeholder=""></textarea>
+                            </div>
+
+
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <div class="msgDelivery-select field-gap">
+                                <label class="input-label">Delivery Method</label>
+                                <div class="options">
+                                    <label class="radio">
+                                        <span>Email</span>
+                                        <input type="radio" name="delivery_method" value="email" checked>
+                                    </label>
+                                    <label class="radio">
+                                        <span>In-App Notification</span>
+                                        <input type="radio" name="delivery_method" value="in_app">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ScheduleNotification-box">
+                            <label class="input-label">Schedule Notification</label>
+                            <div class="content">
+
+                               <div class="submit-button">
+                                <button class="primary-btn"><span >Send Now <i class="fa-solid fa-paper-plane"></i></span></button>
+                            </div>
+                                <div class="divider">or</div>
+                                <div class="date-field">
+                                    <label class="input-label">Schedule for Later</label>
+                                    <div class="date-input-field" >
+                                        <input  class="input-field" placeholder="Select Date">
+                                        <span class="date-icon" >
+                                            <img src="images/date-icon.svg" alt="">
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Section (Preview) -->
+                    <div class="notification-preview">
+
+                        <h3 class="preview-title">Preview Notification</h3>
+
+                        <div class="preview-box">
+
+                            <div class="preview-row">
+                                <span class="preview-label">Title:</span>
+                                <span class="preview-value">Special Offer for Active Users</span>
+                            </div>
+
+                            <div class="preview-row">
+                                <span class="preview-label">Message:</span>
+                                <p class="preview-message preview-value">
+                                    Enjoy a special 20% discount on your next subscription! Offer valid for active users
+                                    only.
+                                    Don’t miss out—this offer ends at the end of the month. Click below to learn more!
+                                </p>
+                            </div>
+
+                            <div class="preview-row">
+                                <span class="preview-label">Delivery Method:</span>
+                                <span class="preview-value">Email</span>
+                            </div>
+
+                            <div class="preview-row">
+                                <span class="preview-label">Scheduled Date:</span>
+                                <span class="preview-value">-</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+        integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

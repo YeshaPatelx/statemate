@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar sidebar-nav">
+        <div class="sidebar-inner">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <div class="menu-container">
+                <ul class="menu">
+                    <li >
+                        <a href="index.html" class="menu-item ">
+                            <div class="menu-title-inner">
+                                <img src="images/home.svg" alt="">
+                                <span>Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="userManagement.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/user.svg" alt="">
+                                <span>users</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/content.svg" alt="">
+                                <span>content</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="postList.html">
+                                    <span>Post list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reportPostList.html">
+                                    <span>Report Post List</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/events.svg" alt="">
+                                <span>events</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="eventList.html">
+                                    <span>event list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="createEvent.html">
+                                    <span>add new event</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="subscription.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/subscription.svg" alt="">
+                                <span>subscription & payments</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reporting-and-analytics.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/reporting.svg" alt="">
+                                <span>reporting & Analytics</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedback.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/support.svg" alt="">
+                                <span>Support & Feedback</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/notification-bar.svg" alt="">
+                                <span>Notification</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="createNotification.html">
+                                    <span>create notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ScheduledNotifications.html">
+                                    <span>schedule notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notificationHistory.html">
+                                    <span>notification history</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/profile.svg" alt="">
+                                <span>my profile</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="admin-info">
+            <div class="detail-wrap">
+                <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                <div class="user-details">
+                    <h4 class="name">james victor</h4>
+                    <span class="role">Admin</span>
+                </div>
+            </div>
+            <div class="logout-icon" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                <img src="images/logout.svg" alt="">
+            </div>
+        </div>
+
+        <div class="sidebar-image">
+            <img src="images/sidebar-img.png" alt="">
+        </div>
+
+    </aside>
+
+    <div class="main-container">
+        <div class="header">
+            <div class="header-head">
+                <div class="toggle-data">
+                    <a class="toggle-info">
+                        <img src="images/toggle.svg" alt="">
+                    </a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search here...">
+                        <span>
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bar">
+
+
+                <div class="notification">
+                    <a href="#">
+                        <img src="images/notification.svg" alt="">
+                    </a>
+                    <span class="dot">5</span>
+                </div>
+
+                <div class="user-info" id="userMenu">
+                    <div class="detail-wrap">
+                        <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                        <div class="user-details">
+                            <h4 class="name">james victor</h4>
+                            <span class="role">Admin</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+
+            <div class="breadcrumb-container">
+                <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">content</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="createPost-btn" >
+                <button  class="primary-btn">
+                    <span>create event</span>
+                     <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="post-list-container">
+                <div class="post-header">
+                    <h2>Event Information</h2>
+                    <div class="actions">
+                        <div class="search-input">
+                            <input type="text" placeholder="Search">
+                            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                        <button class="filter-btn">
+                            <span class="filter-icon">
+                                <img src="images/Filters lines.svg" alt="">
+                            </span> 
+                            <span class="text">Filters</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="post-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Event Name</th>
+                                <th>Organizer</th>
+                                <th>Time</th>
+                                <th>Date</th>
+                                <th>Location</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Digital Product Design Seminar </td>
+                                <td>
+                                    <div class="profile-img">
+                                        <img src="images/profile.png" alt="profile">
+                                        <span class="user-name">john smith</span>
+                                    </div>
+                                </td>
+                                <td>9:00am- 5:00pm</td>
+                                <td>25 Jun2023</td>
+                                <td>California(CA),92677</td>
+                                <td>
+                                    <span class="action-wrapper">
+                                        <a class="action"><i class="fa-solid fa-ellipsis"></i></a>
+                                        <div class="dropdown-menu-content">
+                                            <a class="menu-text" data-bs-toggle="modal" data-bs-target="#Modal">Delete</a>
+                                        </div>
+
+                                    </span>
+                                   
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Digital Product Design Seminar </td>
+                                <td>
+                                    <div class="profile-img">
+                                        <img src="images/profile.png" alt="profile">
+                                        <span class="user-name">john smith</span>
+                                    </div>
+                                </td>
+                                <td>9:00am- 5:00pm</td>
+                                <td>25 Jun2023</td>
+                                <td>California(CA),92677</td>
+                                <td>
+                                    <span class="action-wrapper">
+                                        <a class="action"><i class="fa-solid fa-ellipsis"></i></a>
+                                        <div class="dropdown-menu-content">
+                                            <a class="menu-text" data-bs-toggle="modal" data-bs-target="#DeleteModal">Delete</a>
+                                        </div>
+
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination-container">
+                    <div class="results">Showing 4 out of 20 results</div>
+                    <div class="pagination">
+                        <div class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
+                        <div class="page">1</div>
+                        <div class="page active">2</div>
+                        <div class="dots"><i class="fa-solid fa-ellipsis"></i></div>
+                        <div class="page">20</div>
+                        <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+  <!--deleteModal Modal -->
+    <div class="modal fade " id="DeleteModal" tabindex="-1" aria-labelledby="#DeleteModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <div class="pattern-bg">
+                        <img src="images/pattern-bg.png" alt="">
+                        <span class="delete-icon">
+                            <img src="images/delete-icon.png" alt="">
+                        </span>
+                        <a class="close-icon" data-bs-dismiss="modal"  href=""><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <div class="modal-data">
+                        <div class="modal-data-inner" >
+                            <h2>are you sure you want to delete the list?</h2>
+                            <p>you will not be able to recover them afterwards</p>
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="buttons">
+                        <button class="modal-btn primary-btn-color">
+                            <span>Continue</span>
+                        </button>
+                        <button class=" modal-btn  light-btn" data-bs-dismiss="modal">
+                            <span>Cancel</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+        integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src="js/custom.js"></script>
+</body>
+
+</html>

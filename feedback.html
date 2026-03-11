@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> support and feedback</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar sidebar-nav">
+        <div class="sidebar-inner">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <div class="menu-container">
+                <ul class="menu">
+                    <li >
+                        <a href="index.html" class="menu-item ">
+                            <div class="menu-title-inner">
+                                <img src="images/home.svg" alt="">
+                                <span>Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="userManagement.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/user.svg" alt="">
+                                <span>users</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/content.svg" alt="">
+                                <span>content</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="postList.html">
+                                    <span>Post list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reportPostList.html">
+                                    <span>Report Post List</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/events.svg" alt="">
+                                <span>events</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="eventList.html">
+                                    <span>event list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="createEvent.html">
+                                    <span>add new event</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="subscription.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/subscription.svg" alt="">
+                                <span>subscription & payments</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reporting-and-analytics.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/reporting.svg" alt="">
+                                <span>reporting & Analytics</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="feedback.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/support.svg" alt="">
+                                <span>Support & Feedback</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/notification-bar.svg" alt="">
+                                <span>Notification</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="createNotification.html">
+                                    <span>create notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ScheduledNotifications.html">
+                                    <span>schedule notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notificationHistory.html">
+                                    <span>notification history</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/profile.svg" alt="">
+                                <span>my profile</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="admin-info">
+            <div class="detail-wrap">
+                <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                <div class="user-details">
+                    <h4 class="name">james victor</h4>
+                    <span class="role">Admin</span>
+                </div>
+            </div>
+            <div class="logout-icon" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                <img src="images/logout.svg" alt="">
+            </div>
+        </div>
+
+        <div class="sidebar-image">
+            <img src="images/sidebar-img.png" alt="">
+        </div>
+
+    </aside>
+
+    <div class="main-container">
+        <div class="header">
+            <div class="header-head">
+                <div class="toggle-data">
+                    <a class="toggle-info">
+                        <img src="images/toggle.svg" alt="">
+                    </a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search here...">
+                        <span>
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bar">
+
+
+                <div class="notification">
+                    <a href="#">
+                        <img src="images/notification.svg" alt="">
+                    </a>
+                    <span class="dot">5</span>
+                </div>
+
+                <div class="user-info" id="userMenu">
+                    <div class="detail-wrap">
+                        <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                        <div class="user-details">
+                            <h4 class="name">james victor</h4>
+                            <span class="role">Admin</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+
+            <div class="breadcrumb-container">
+                <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">support & feedback</li>
+                    </ol>
+                </nav>
+            </div>
+
+
+            <div class="userMangement-table-wrapper">
+
+                <div class="userMangement-table">
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  active" id="support-tab" data-bs-toggle="tab"
+                                data-bs-target="#support" type="button" role="tab" aria-controls="support"
+                                aria-selected="true">
+                                <span>support</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="feedback-tab" data-bs-toggle="tab" data-bs-target="#feedback"
+                                type="button" role="tab" aria-controls="feedback" aria-selected="false">
+                                <span>feedback</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="response-tab" data-bs-toggle="tab" data-bs-target="#response"
+                                type="button" role="tab" aria-controls="response" aria-selected="false">
+                                <span>response template</span>
+                            </button>
+                        </li>
+                    </ul>
+
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="support" role="tabpanel"
+                            aria-labelledby="support-tab">
+                            <!-- Ticket Summary -->
+                            <div class="ticket-summary">
+                                <div class="ticket-details">Total Tickets: <span>30</span></div>
+                                <div class="divider"></div>
+                                <div class="ticket-details">Open: <span>10</span></div>
+                                <div class="divider"></div>
+                                <div class="ticket-details">Pending: <span>20</span></div>
+                                <div class="divider"></div>
+                                <div class="ticket-details">Resolved: <span>20</span></div>
+                            </div>
+
+                            <!-- Filter Dropdown -->
+                            <div class="filter-box">
+                                <select>
+                                    <option>Pending</option>
+                                    <option>Open</option>
+                                    <option>Resolved</option>
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Gender</th>
+                                            <th>Join Date</th>
+                                            <th>Verification Status</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+    
+                                    <tbody>
+                                        <!-- Row 1 -->
+                                        <tr>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge pending">Pending</span></td>
+                                            <td>
+                                                <div class="action-btn">
+                                                    <a class="eye-icon" data-toggle="tooltip" data-bs-toggle="modal"
+                                                        data-bs-target="#userDetailModal"><img src="images/view-icon.png"
+                                                            alt=""><span class="tooltip">View</span></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 2 -->
+                                        <tr>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge verified">resolved</span></td>
+                                            <td>
+                                                <div class="action-btn">
+                                                    <a class="eye-icon" data-toggle="tooltip" data-bs-toggle="modal"
+                                                        data-bs-target="#userDetailModal"><img src="images/view-icon.png"
+                                                            alt=""><span class="tooltip">View</span></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 3 -->
+                                        <tr>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge open">open</span></td>
+                                            <td>
+                                                <div class="action-btn">
+                                                    <a class="eye-icon" data-toggle="tooltip" data-bs-toggle="modal"
+                                                        data-bs-target="#userDetailModal"><img src="images/view-icon.png"
+                                                            alt=""><span class="tooltip">View</span></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row 4 -->
+                                        <tr>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>Male</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge closed">closed</span></td>
+                                            <td>
+                                                <div class="action-btn">
+                                                    <a class="eye-icon" data-toggle="tooltip" data-bs-toggle="modal"
+                                                        data-bs-target="#userDetailModal"><img src="images/view-icon.png"
+                                                            alt=""><span class="tooltip">View</span></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="feedback" role="tabpanel" aria-labelledby="feedback-tab">
+                            <!-- Filter Dropdown -->
+                            <div class="filter-box">
+                                <select>
+                                    <option>Positive</option>
+                                    <option>Negative</option>
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+    
+                                            <th>Profile</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Feedback </th>
+                                            <th>Date</th>
+                                            <th>Type</th>
+                                        </tr>
+                                    </thead>
+    
+                                    <tbody>
+    
+                                        <!-- Row 1 -->
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Patrick Deo</td>
+                                            <td>patexample@abc.com</td>
+                                            <td>The app is great, I love the!</td>
+                                            <td>15/09/2024</td>
+                                            <td>
+                                                <span class="status-badge positive">Positive</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="user-profile">
+                                                    <img src="images/profile.png">
+                                                </span>
+                                            </td>
+                                            <td>Lily Kat</td>
+                                            <td>lilyexample@abc.com</td>
+                                            <td>Good experience overall.</td>
+                                            <td>15/09/2024</td>
+                                            <td><span class="status-badge negative">Negative</span></td>
+                                        </tr>
+    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="response" role="tabpanel" aria-labelledby="response-tab">
+                            <!-- Filter Dropdown -->
+                            <div class="createPost-btn">
+                                <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#editResponseModal">
+                                    <span>Add New Response Template</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>table align-middle</th>
+                                            <th>response content</th>
+                                            <th>action</th>
+    
+                                        </tr>
+                                    </thead>
+    
+                                    <tbody>
+    
+                                        <!-- Row 1 -->
+                                        <tr>
+                                            <td class="template-name">login issue</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna
+                                                sed ac</td>
+                                            <td>
+                                                <div class="action-btn">
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#editResponseModal"><img src="images/edit-icon.svg"
+                                                            alt=""></a>
+                                                    <a class="delete-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#DeleteModal"><img src="images/delete-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+    
+                                        <!-- Row 2 -->
+                                        <tr>
+                                            <td class="template-name">login issue</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna
+                                                sed ac</td>
+                                            <td>
+                                                <div class="action-btn">
+                                                    <a class="suspend-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#editResponseModal"><img src="images/edit-icon.svg"
+                                                            alt=""></a>
+                                                    <a class="delete-bg" data-bs-toggle="modal"
+                                                        data-bs-target="#DeleteModal"><img src="images/delete-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--editResponse Modal -->
+    <div class="modal fade " id="editResponseModal" tabindex="-1" aria-labelledby="#editResponseModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ribbon-header ">
+
+                    <h5 class="modal-title">
+                        <span class="fold fold-left" aria-hidden="true"></span>
+                        <span class="ribbon-inner">Add New Response Template</span>
+                        <span class="fold fold-right" aria-hidden="true"></span>
+                    </h5>
+
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="field-box" >
+                            <div class="form-group">
+                                <label for="event-title">Title</label>
+                                <input class="input-field" type="text" id="event-title" placeholder="">
+                            </div>
+                             <div class="form-group">
+                                <label for="event-title">content</label>
+                               <textarea class="input-field" id="event-details" placeholder=""></textarea>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="buttons">
+                        <button class="modal-btn primary-btn-color">
+                            <span>save template</span>
+                        </button>
+                        <button class=" modal-btn   light-btn" data-bs-dismiss="modal">
+                            <span>cancel</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!--deleteModal Modal -->
+    <div class="modal fade " id="DeleteModal" tabindex="-1" aria-labelledby="#DeleteModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <div class="pattern-bg">
+                        <img src="images/pattern-bg.png" alt="">
+                        <span class="delete-icon">
+                            <img src="images/delete-icon.png" alt="">
+                        </span>
+                        <a class="close-icon" data-bs-dismiss="modal"  href=""><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <div class="modal-data">
+                        <div class="modal-data-inner" >
+                            <h2>are you sure you want to delete this response template?</h2>
+                            <p>you will not be able to recover them afterwards</p>
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="buttons">
+                        <button class="modal-btn primary-btn-color">
+                            <span>Continue</span>
+                        </button>
+                        <button class=" modal-btn  light-btn" data-bs-dismiss="modal">
+                            <span>Cancel</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+        integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/custom.js"></script>
+</body>
+
+</html>

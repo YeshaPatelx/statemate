@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporting & Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+
+    <aside class="sidebar sidebar-nav">
+        <div class="sidebar-inner">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <div class="menu-container">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html" class="menu-item ">
+                            <div class="menu-title-inner">
+                                <img src="images/home.svg" alt="">
+                                <span>Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="userManagement.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/user.svg" alt="">
+                                <span>users</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/content.svg" alt="">
+                                <span>content</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="postList.html">
+                                    <span>Post list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reportPostList.html">
+                                    <span>Report Post List</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/events.svg" alt="">
+                                <span>events</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="eventList.html">
+                                    <span>event list</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="createEvent.html">
+                                    <span>add new event</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="subscription.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/subscription.svg" alt="">
+                                <span>subscription & payments</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="reporting-and-analytics.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/reporting.svg" alt="">
+                                <span>reporting & Analytics</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedback.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/support.svg" alt="">
+                                <span>Support & Feedback</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/notification-bar.svg" alt="">
+                                <span>Notification</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="sub-menu-data">
+                            <li>
+                                <a href="createNotification.html">
+                                    <span>create notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ScheduledNotifications.html">
+                                    <span>schedule notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notificationHistory.html">
+                                    <span>notification history</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="menu-item">
+                            <div class="menu-title-inner">
+                                <img src="images/profile.svg" alt="">
+                                <span>my profile</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="admin-info">
+            <div class="detail-wrap">
+                <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                <div class="user-details">
+                    <h4 class="name">james victor</h4>
+                    <span class="role">Admin</span>
+                </div>
+            </div>
+            <div class="logout-icon" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                <img src="images/logout.svg" alt="">
+            </div>
+        </div>
+
+        <div class="sidebar-image">
+            <img src="images/sidebar-img.png" alt="">
+        </div>
+
+    </aside>
+
+    <div class="main-container">
+        <div class="header">
+            <div class="header-head">
+                <div class="toggle-data">
+                    <a class="toggle-info">
+                        <img src="images/toggle.svg" alt="">
+                    </a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search here...">
+                        <span>
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bar">
+
+
+                <div class="notification">
+                    <a href="#">
+                        <img src="images/notification.svg" alt="">
+                    </a>
+                    <span class="dot">5</span>
+                </div>
+
+                <div class="user-info" id="userMenu">
+                    <div class="detail-wrap">
+                        <div class="user-avatar"><img src="images/user.png" alt=""></div>
+                        <div class="user-details">
+                            <h4 class="name">james victor</h4>
+                            <span class="role">Admin</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+
+            <div class="breadcrumb-container">
+                <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Reporting & Analytics</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="events-info-count reporting-count">
+               <div class="left-banner-section">
+                            <div class="box user">
+                                <div class="box-img">
+                                    <img src="images/b-user.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2>600</h2>
+                                    <span>total users</span>
+                                </div>
+                            </div>
+                            <div class="box active-user">
+                                <div class="box-img">
+                                    <img src="images/active-user.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2>550</h2>
+                                    <span>active users</span>
+                                </div>
+                            </div>
+                            <div class="box matchs">
+                                <div class="box-img">
+                                    <img src="images/matchs.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2>100</h2>
+                                    <span>matchs made</span>
+                                </div>
+                            </div>
+                            <div class="box rate">
+                                <div class="box-img">
+                                    <img src="images/rate.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2>85%</h2>
+                                    <span>success rate</span>
+                                </div>
+                            </div>
+                           
+                        </div>
+            </div>
+
+            <div class="behavior-reports-section">
+                <div class="chart-card graph">
+                    <div class="chart-header">
+                        <div class="chart-head">
+                            <h3>user behavior reports</h3>
+                              <!-- Filter Dropdown -->
+                            <div class="filter-box">
+                                <select>
+                                    <option>Expert</option>
+                                    <option>Open</option>
+                                    <option>Resolved</option>
+                                    <option>All</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="chart-filters">
+                            <a href="#" class="active"><span>Year</span></a>
+                            <a href="#"><span>Month</span></a>
+                            <a href="#"><span>Week</span></a>
+                        </div>
+                    </div>
+                        <!-- Chart Area -->
+                        <div class="chart-box">
+                            <canvas id="behaviorChart"></canvas>
+
+                            <!-- Legend -->
+                            <div class="legend">
+                                <span><span class="dot blue"></span> Profile Views</span>
+                                <span><span class="dot pink"></span> Matches</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="revenue-report-container">
+                <div class="row">
+                      <div class="col-lg-6">
+                        <div class="revenue-report-container-inner">
+                            <div class="head-main">
+                                <h2>Matchmaking Efficiency</h2>
+                                <div class="search-container">
+                                
+                                    <!-- Filter Dropdown -->
+                                    <div class="filter-box">
+                                        <select>
+                                            <option>Expert</option>
+                                            <option>Open</option>
+                                            <option>Resolved</option>
+                                            <option>All</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        <div class="chart-card chart-container">
+                                <div class="chart-header">
+                                    <h3>Reports on match success rates</h3>
+                                    <div class="chart-filters">
+                                        <a href="#" class="active"><span>Year</span></a>
+                                        <a href="#"><span>Month</span></a>
+                                        <a href="#"><span>Week</span></a>
+                                    </div>
+                                </div>
+                            <div class="chart-content">
+                                
+                               <div class="row">
+                                <!-- RIGHT SIDE DONUT CHART -->
+                                    <div class="col-lg-6">
+                                        <div class="chart-area">
+                                            <canvas id="donutChart" width="300" height="300"></canvas>
+                                            <!-- CENTER LOGO INSIDE DONUT -->
+                                            <div class="chart-center-text">
+                                                <span class="heart">
+                                                    <img src="images/logo.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- LEFT SIDE LEGEND -->
+                                    <div class="legend col-lg-6">
+                                        <div class="legend-info">
+                                            <div class="item">
+                                                <span class="dot cc"></span>
+                                               Matches Leading to Conversations
+                                            </div>
+    
+                                            <div class="item">
+                                                <span class="dot paypal"></span>
+                                                Match Success Rate
+                                            </div>
+    
+                                            <div class="item">
+                                                <span class="dot google"></span>
+                                                Average Messages per Match
+                                            </div>
+    
+                                            <div class="item">
+                                                <span class="dot apple"></span>
+                                                Unsuccessful Matches
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div>
+
+                           
+                                                    
+                         </div>
+                                                    
+                            </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="revenue-report-container-inner">
+                            <div class="head-main">
+                                <h2>Revenue Reports</h2>
+                                <div class="search-container">
+                                
+                                    <!-- Filter Dropdown -->
+                                    <div class="filter-box">
+                                        <select>
+                                            <option>Expert</option>
+                                            <option>Open</option>
+                                            <option>Resolved</option>
+                                            <option>All</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="graph-card chart-card ">
+                                        <div class="chart-header">
+                                                <h3>Revenue by Subscription Plan</h3>
+                                                <div class="chart-filters">
+                                                    <a href="#" class="active"><span>Year</span></a>
+                                                    <a href="#"><span>Month</span></a>
+                                                    <a href="#"><span>Week</span></a>
+                                                </div>
+                                        </div>
+                                        <div class="chart-contain">
+                                           <canvas id="subscriptionChartinner"></canvas>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            
+                        </div>
+             
+                    </div>
+                    </div>
+                  
+                </div>
+             
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Offcanvas (Bootstrap) -->
+    <div class="offcanvas offcanvas-end filter-Offcanvas" tabindex="-1" id="filterOffcanvas"
+        aria-labelledby="filterOffcanvasLabel">
+        <div class="offcanvas-header">
+            <a href="#" class="back-arrow " data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-chevron-left"></i></a>
+            <h5 class="offcanvas-title">Filter & Show</h5>
+
+        </div>
+        <div class="offcanvas-body">
+            <div class=" serach-location field-gap border-bottom username-filed">
+                <label class="form-label">Search by Username</label>
+                <div class="input-field">
+                    <input type="text" placeholder="Search user here">
+                </div>
+
+            </div>
+
+
+            <div class=" verification-status field-gap border-bottom">
+
+                <label class="form-label">Status</label>
+
+                <div class="custom-dropdown" id="verificationDropdown">
+                    <div class="custom-dropdown-toggle">
+                        <div class="status-select">
+                            <span class="text" id="selectedText">Choose Status</span>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="custom-dropdown-menu">
+                        <div class="item" data-value="verified">Verified</div>
+                        <div class="item" data-value="pending">Pending</div>
+                        <div class="item" data-value="rejected">Rejected</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" verification-status field-gap border-bottom">
+
+                <label class="form-label"> Plan Purchased</label>
+
+                <div class="custom-dropdown" id="verificationDropdown1">
+                    <div class="custom-dropdown-toggle">
+                        <div class="status-select">
+                            <span class="text" id="selectedText1">Select Subscription</span>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="custom-dropdown-menu">
+                        <div class="item" data-value="verified">Basic</div>
+                        <div class="item" data-value="pending">Premium</div>
+                        <div class="item" data-value="rejected">Elite</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-wrapper">
+                <button class="light-btn">Reset</button>
+                <button class="primary-color-btn">Apply</button>
+            </div>
+        </div>
+    </div>
+
+ <!-- Refund Request Details popup -->
+   <div class="modal fade " id="refundRequestModal" tabindex="-1" aria-labelledby="#refundRequestModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ribbon-header ">
+ 
+                    <h5 class="modal-title">
+                        <span class="fold fold-left" aria-hidden="true"></span>
+                        <span class="ribbon-inner">Refund Request Details</span>
+                        <span class="fold fold-right" aria-hidden="true"></span>
+                    </h5>
+ 
+                </div>
+                <div class="modal-body">
+                        <div class="field-box row" >
+                            <div class="detail-user-img">
+                                <img src="images/detail-img.png" alt="">
+                            </div>
+                             <div class="form-group detail-inner-info col-lg-12">
+                               <div class="benefits-card-content">
+                                <div class="benefits-card">
+                                  
+                                    <div class="detail-content">
+                                        <div class="inner-data">
+                                            <h5>Request No:</h5>
+                                            <span>03</span>
+                                        </div>
+                                        <div class="inner-data">
+                                            <h5>User Name:</h5>
+                                            <span>Lizza Parekh</span>
+                                        </div>
+                                        <div class="inner-data">
+                                            <h5>Request Date:</h5>
+                                            <span>01 Oct 2024</span>
+                                        </div>
+                                        <div class="inner-data">
+                                            <h5>Plan purchased:</h5>
+                                            <span>Premium Plan</span>
+                                        </div>
+                                        <div class="inner-data">
+                                            <h5>Reason for Refund:</h5>
+                                            <span>Purchased Wrong Plan</span>
+                                        </div>
+                                        <div class="inner-data">
+                                            <h5>Status:</h5>
+                                            <span>Approved (on 03 Oct 2024)</span>
+                                        </div>
+                                     
+
+                                    </div>
+
+                                   
+
+                                   
+                                </div>
+
+                                </div>
+                                <div>
+                                    <div class="inner-data">
+                                        <h5>Internal Remarks :</h5>
+                                        <span>Refund approved due to early cancellation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="bottom-text">This refund has been approved and processed.</span>
+ 
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+        integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <!-- Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="js/custom.js"></script> 
+<script>
+  const ctx10 = document.getElementById("subscriptionChartinner").getContext("2d");
+
+  const gradient10 = ctx10.createLinearGradient(0, 0, 0, 400);
+  gradient10.addColorStop(0, "#EE4B9E");
+  gradient10.addColorStop(1, "#7627B5");
+
+  const datasets = {
+    year: [48, 78, 29],
+    month: [12, 25, 9],
+    week: [3, 8, 2]
+  };
+
+  let chart = new Chart(ctx10, {
+    type: "bar",
+    data: {
+      labels: ["Basic", "Premium", "Elite"],
+      datasets: [{
+        data: datasets.year,
+        borderRadius: 30,
+        backgroundColor: gradient10,
+        barThickness: 30
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: {
+        y: {
+          border: {
+            display: true,       // Y axis visible
+            color: "#d3d3d3",
+            width: 1
+          },
+          ticks: {
+            stepSize: 20,
+            color: "#777"
+          },
+          grid: {
+            display: true,
+            drawBorder: true,
+            color: function(context) {
+              // Only top border
+              return context.index === 0 ? "#d3d3d3" : "transparent";
+            }
+          }
+        },
+        x: {
+          border: {
+            display: true,       // X axis visible
+            color: "#d3d3d3",
+            width: 1
+          },
+          ticks: {
+            color: "#111",
+            font: { size: 14 }
+          },
+          grid: {
+            display: false
+          }
+        }
+      }
+    }
+  });
+
+  // Filter selection
+  document.querySelectorAll(".chart-filters a").forEach(el => {
+    el.addEventListener("click", () => {
+      document.querySelector(".chart-filters .active")?.classList.remove("active");
+      el.classList.add("active");
+
+      chart.data.datasets[0].data = datasets[el.dataset.type];
+      chart.update();
+    });
+  });
+</script>
+<script>
+    const ctx5 = document.getElementById("behaviorChart").getContext("2d");
+
+new Chart(ctx5, {
+    type: "line",
+    data: {
+        labels: [
+            "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+        ],
+        datasets: [
+            {
+                label: "Profile Views",
+                data: [50, 1120, 430, 560, 350, 260, 850, 780, 760, 1120, 780, 800],
+                borderColor: "#4d8dff",
+                backgroundColor: "transparent",
+                borderWidth: 3,
+                tension: 0.5
+            },
+            {
+                label: "Matches",
+                data: [150, 620, 300, 250, 740, 580, 570, 740, 650, 640, 700, 860],
+                borderColor: "#ff74b8",
+                backgroundColor: "transparent",
+                borderWidth: 3,
+                tension: 0.5
+            }
+        ]
+    },
+    options: {
+        plugins: {
+            legend: { display: false }
+        },
+        scales: {
+            x: {
+                ticks: { color: "#1e1e1e" },
+                grid: { color: "rgba(255,255,255,0.05)" }
+            },
+         
+            y: {
+                ticks: {
+                    color: "#1e1e1e",
+                    stepSize: 100         
+                },
+                min: 0,                  
+                max: 1400,                 
+                grid: { color: "#EBEFF2" }
+            }
+        }
+    }
+});
+</script>
+ 
+        <script>
+            const canvas = document.getElementById("donutChart");
+            const ctx7 = canvas.getContext("2d");
+
+            const data = [40, 30, 20, 10];
+            const colors = ["#4b196c", "#d22d49", "#ea4c89", "#d6a3ff"];
+
+            let total = data.reduce((a, b) => a + b, 0);
+            let startAngle = -90 * (Math.PI / 180);
+
+            data.forEach((value, i) => {
+                let sliceAngle = (value / total) * (2 * Math.PI);
+
+                ctx7.beginPath();
+                ctx7.moveTo(canvas.width / 2, canvas.height / 2);
+                ctx7.arc(
+                canvas.width / 2,
+                canvas.height / 2,
+                120,
+                startAngle,
+                startAngle + sliceAngle
+                );
+                ctx7.closePath();
+                ctx7.fillStyle = colors[i];
+                ctx7.fill();
+
+                startAngle += sliceAngle;
+            });
+
+            // Inner white circle for donut hole
+            ctx7.beginPath();
+            ctx7.arc(canvas.width / 2, canvas.height / 2, 70, 0, 2 * Math.PI);
+            ctx7.fillStyle = "#fff";
+            ctx7.fill();
+        </script>
+
+          <script>
+            const ctx7 = document.getElementById('subscriptionChart1').getContext('2d');
+
+            // Gradient
+            const gradient1 = ctx7.createLinearGradient(0, 0, 0, 250);
+            gradient1.addColorStop(0, "#EE4B9E");
+            gradient1.addColorStop(1, "#7627B5");
+
+            // Create Chart AFTER loading plugin
+            new Chart(ctx7, {
+                type: 'bar',
+                data: {
+                    labels: ['Basic', 'Premium', 'Elite'],
+                    datasets: [{
+                        label: "Purchases",
+                        data: [50, 80, 30],
+                        backgroundColor: [gradient1, gradient1, gradient1],
+                        borderRadius: { topLeft: 12, topRight: 12 },
+                        barThickness: 28
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false },
+                        datalabels: {
+                            anchor: 'end',
+                            align: 'end',
+                            color: '#000',
+                            font: { size: 12, weight: 'bold' }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { color: "#000" },
+                            grid: { color: "#fff" }
+                        },
+                        x: {
+                            ticks: { color: "#000", font: { size: 14 } },
+                            grid: { display: false }
+                        }
+                    }
+                },
+                plugins: [ChartDataLabels]
+            });
+        </script>
+
+        
+
+
+</body>
+
+</html>
